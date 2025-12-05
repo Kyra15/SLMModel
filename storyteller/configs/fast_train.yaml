@@ -58,12 +58,12 @@ training:
 
   # Checkpointing
   save_dir: "checkpoints/fast_train"
-  save_every_n_steps: 100  # Save less frequently
+  save_every_n_steps: 1000  # Save less frequently
   keep_last_n_checkpoints: 2  # Keep fewer checkpoints
 
   # Logging - FREQUENT for visibility
-  log_every_n_steps: 10  # Log every 10 steps
-  eval_every_n_steps: 50  # Evaluate every 50 steps
+  log_every_n_steps: 20  # Log every 10 steps
+  eval_every_n_steps: 100  # Evaluate every 50 steps
   use_mlflow: true
   mlflow_experiment_name: "storyteller"
   mlflow_run_name: "fast_train"
